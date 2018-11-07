@@ -10,8 +10,8 @@ app.use(express.static('./public'));
 const port = 3000;
 
 const assistant = new AssistantV1({
-  username: '',
-  password: '',
+  username: 'ad0a73f6-51e9-4559-8bab-62ba66b65acc',
+  password: 'jAn2h5Yci3OH',
   url: 'https://gateway.watsonplatform.net/assistant/api/',
   version: '2018-02-16',
 });
@@ -21,7 +21,7 @@ app.post('/conversation/', (req, res) => {
 
   const params = {
     input: { text },
-    workspace_id:'',
+    workspace_id:'3e20011f-5f7d-4cf8-90c1-dbbdfee5ecbc',
     context,
   };
 
